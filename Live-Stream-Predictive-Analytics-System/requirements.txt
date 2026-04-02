@@ -1,0 +1,28 @@
+# ============================================================
+# Core dependencies (always required)
+# ============================================================
+numpy>=1.24
+scikit-learn>=1.3
+
+# ============================================================
+# Web dashboard (Plotly Dash)
+# ============================================================
+dash>=2.16
+plotly>=5.20
+
+# ============================================================
+# XGBoost predictor (preferred over sklearn fallback)
+# Install for best performance with --model xgboost
+# ============================================================
+xgboost>=2.0
+
+# ============================================================
+# LSTM predictor — only needed when using --model lstm
+# CPU-only build: replace "tensorflow" with "tensorflow-cpu"
+# ============================================================
+# tensorflow>=2.13
+
+# ============================================================
+# Kafka transport — only needed when using --mode kafka
+# ============================================================
+# kafka-python>=2.0.0
